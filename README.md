@@ -10,4 +10,6 @@ Esitatud ülesanded:
 
 ## HTML
 
+Plugin: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 4. kkk
