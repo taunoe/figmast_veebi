@@ -12,4 +12,8 @@ Esitatud ülesanded:
 
 Plugin: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-4. kkk
+Sümbolid: [UTF-8 Miscellaneous Symbols](https://www.w3schools.com/charsets/ref_utf_symbols.asp)
+
+4. [vabatahtlik ülesanne]()
+
+5. ....

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+/* <weight>: Use a value from 100 to 900*/
+/* #f4d35e kollane*/
+
+body {
+    background-color: #faf0ca;
+    color: #0d3b66;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Use a value from 100 to 900 */
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2, h3 {
+    color: #0d3b66;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Use a value from 300 to 900 */
+    font-style: normal;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 200px;
+    height: 6px;
+    background-color: #f4d35e;
+    border: 0;
+    border-radius: 3px;
+}
+
+ul {
+    width: 300px;
+    text-align: center;
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+}
+
+table {
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #0d3b66;
+    border-radius: 10px;
+    background-color: #f4d35e;
+}
+
+td {
+    border: 0px solid #0d3b66;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#td-figma {
+    color: #0d3b66;
+}
+
+#td-html {
+    color: #0d3b66;
+}
+
+#profile_img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
