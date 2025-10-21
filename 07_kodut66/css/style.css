@@ -1,0 +1,286 @@
+/*
+Tauno Erik
+21.10.2025
+
+Clip Path kujundid:
+https://bennettfeely.com/clippy/
+
+Grid:
+https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+
+body {
+    background-color: #faf0ca;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 osa */
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+.grid-item {
+    display: grid;
+    /* border: 1px solid black; */
+    justify-items: center; /* horinsontaalselt */
+    align-items: center; /* vertikaalselt */
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #f4d35e;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    justify-self: start;
+}
+
+.menu-triibud {
+    width: 50px;
+    height: 50px;
+    background-color: #f4d35e;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    justify-self: end;
+}
+
+.page-menu {
+    display: none;
+}
+
+.viisnurk {
+    width: 300px;
+    height: 300px;
+    background-color: #f4d35e;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 osa */
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+
+.frame {
+    width: 300px;
+    height: 300px;
+    background-color: #f4d35e;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.gallery-image {
+    display: none;
+}
+
+.bevel {
+    width: 200px;
+    height: 200px;
+    background-color: #f4d35e;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.message {
+    width: 300px;
+    height: 300px;
+    background-color: #f4d35e;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.contact-form {
+    display: none;
+}
+
+.socialmedia div {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: #f4d35e;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        background-color: #fff;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .menu-triibud {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .page-menu {
+        display: block;
+        list-style: none;
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+    .page-menu li{
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .viisnurk {
+        justify-self: start;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .gallery {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, auto);
+         gap: 20px
+    }
+
+    .gallery-image {
+        display: block;
+        width: 370px;
+        height: 220px;
+        background-color: #f4d35e;
+        clip-path: polygon(100% 1%, 100% 70%, 70% 100%, 0 100%, 0 0);
+    }
+
+    .bevel {
+        width: 760px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .message {
+        display: none;
+    }
+
+    .contact-form {
+        display: block;
+        width: 760px;
+        height: 422px;
+        background-color: #f4d35e;
+        clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    }
+
+    .socialmedia {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    body {
+        background-color: #0D3B66;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .menu-triibud {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .page-menu {
+        display: block;
+        list-style: none;
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+    .page-menu li{
+        display: inline-block;
+        text-transform: uppercase;
+        color:#faf0ca;
+    }
+
+    .viisnurk {
+        justify-self: start;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .gallery {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(2, auto);
+         gap: 20px
+    }
+
+    .gallery-image {
+        display: block;
+        width: 370px;
+        height: 220px;
+        background-color: #f4d35e;
+        clip-path: polygon(100% 1%, 100% 70%, 70% 100%, 0 100%, 0 0);
+    }
+
+    .bevel {
+        display:none;
+    }
+
+    .client {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px
+    }
+
+    .client-item {
+        display: block;
+        width: 370px;
+        height: 370px;
+        background-color: #f4d35e;
+    }
+
+    .client-left {
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    .client-right {
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    .contact-sots {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1 auto);
+        gap: 20px
+    }
+}
