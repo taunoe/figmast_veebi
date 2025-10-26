@@ -10,10 +10,9 @@ Esitatud ülesanded:
 
 ## HTML
 
+https://taunoe.github.io/figmast_veebi/
+
 Plugin: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 Sümbolid: [UTF-8 Miscellaneous Symbols](https://www.w3schools.com/charsets/ref_utf_symbols.asp)
 
-4. [vabatahtlik ülesanne]()
-
-5. ....
